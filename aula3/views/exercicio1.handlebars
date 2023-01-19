@@ -1,0 +1,31 @@
+<style>
+    form{
+        width: 500px;
+        margin: 30px auto;
+        text-align: center;
+    }
+
+    input{
+        margin-top: 10px;
+    }
+
+    #exibirDados{
+        width: 700px;
+        margin: 30px auto;
+    }
+</style>
+
+<form action="/exercicio1" method="post">
+    <input type="text" placeholder="CEP" name="cep" class="form-control">
+    <input type="submit" value="Enviar" class="btn btn-primary">
+</form>
+
+{{#if exibirDados}}
+    <div id="exibirDados">
+        <h1>Estado: {{dados.uf}}</h1>
+        <h1>Cidade: {{dados.localidade}}</h1>
+        <h1>Bairro: {{dados.bairro}}</h1>
+        <h1>Logradouro: {{dados.logradouro}}</h1>
+        <h1>Complemento: {{dados.complemento}}</h1>
+    </div>
+{{/if}}

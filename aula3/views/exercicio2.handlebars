@@ -1,1 +1,26 @@
-{{uf}}
+<style>
+    main{
+        width: 1200px;
+        margin: 0 auto;
+    }
+
+    .card{
+        display: inline-block;
+        width: 200px;
+        margin: 20px;
+        text-align: center;
+    }
+
+    h1{
+        font-size: 14px;
+    }
+</style>
+
+<main>
+    {{#each pokemons}}
+        <div class="card">
+            <img src="{{sprites.front_default}}">
+            <h1>{{name}}</h1>
+        </div>
+    {{/each}}
+</main>
