@@ -55,7 +55,7 @@ app.get('/exercicio2', async (req, res) => {
         const requisicao = await fetch('https://pokeapi.co/api/v2/pokemon/'+i);
         const conversao = await requisicao.json()
         pokemons.push(conversao);
-    }
+    } 
 
     console.log(pokemons);
     
