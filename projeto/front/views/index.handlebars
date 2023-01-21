@@ -1,0 +1,27 @@
+<form action="/cadastrar" method="post">
+    <input type="text"   placeholder="Nome do produto"  name="nome" class="form-control"> 
+    <input type="number" placeholder="Valor do produto" name="valor" class="form-control">
+    <input type="submit" value="Cadastrar" class="btn btn-primary"> 
+</form>
+
+<table class="table table-striped">
+    <thead>
+        <tr>
+            <th>#</th>
+            <th>Nome</th>
+            <th>Valor</th>
+            <th>Selecionar</th>
+        </tr>
+    </thead>
+
+    <tbody>
+        {{#each produtos}}
+            <tr>
+                <td>{{id}}</td>
+                <td>{{nome}}</td>
+                <td>{{valor}}</td>
+                <td><a href="/produtoSelecionado/{{id}}" class="btn btn-success">Selecionar</a></td>
+            </tr>
+        {{/each}}
+    </tbody>
+</table>

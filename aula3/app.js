@@ -51,7 +51,7 @@ app.get('/exercicio2', async (req, res) => {
     let pokemons = [];
 
     // Laço de repetição e requisição
-    for(let i=1; i<=151; i++){
+    for(let i=1; i<=30; i++){
         const requisicao = await fetch('https://pokeapi.co/api/v2/pokemon/'+i);
         const conversao = await requisicao.json()
         pokemons.push(conversao);

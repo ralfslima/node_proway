@@ -1,0 +1,14 @@
+{
+  "produtos": [
+    {
+      "nome": "Notebook Dell Inspiron",
+      "valor": "4600",
+      "id": 1
+    },
+    {
+      "nome": "Macbook",
+      "valor": "7000",
+      "id": 3
+    }
+  ]
+}

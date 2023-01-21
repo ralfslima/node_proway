@@ -1,0 +1,9 @@
+<form action="/editar" method="post">
+    <input type="hidden" value="{{produto.id}}" name="id">
+    <input type="text"   placeholder="Nome do produto"  value="{{produto.nome}}"  name="nome" class="form-control"> 
+    <input type="number" placeholder="Valor do produto" value="{{produto.valor}}" name="valor" class="form-control">
+    
+    <input type="submit" value="Editar" class="btn btn-warning"> 
+    <a href="/remover/{{produto.id}}" class="btn btn-danger">Remover</a>
+    <a href="/" class="btn btn-secondary">Cancelar</a>
+</form>
